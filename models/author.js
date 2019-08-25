@@ -17,7 +17,7 @@ var AuthorSchema = new Schema ( // create a instance of Mongoose Schema Class
 AuthorSchema 
 .virtual('name')
 .get(function() {
-    return this.family_name + ',' + this.family_name;
+    return this.family_name + ',' + this.first_name;
 });
 
 //Virtual for author's lifespan 
